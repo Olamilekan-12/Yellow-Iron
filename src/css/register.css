@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/asphat\ p.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 700px;
+  height: 550px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -1px 0px 30px 7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 0px 30px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 30px 7px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid gray;
+  background: url("../images/chosen\ trenchers.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  padding: 20px;
+  flex: 1;
+}
+
+.left-side > :nth-child(2) {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.login {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 555;
+  color: white;
+}
+
+.login > a {
+  text-decoration: none;
+  background: transparent;
+  color: purple;
+  font-weight: bold;
+  color: white;
+  z-index: 555;
+}
+
+.logo h1 {
+  font-size: 22px;
+  color: yellow;
+}
+
+.logo h1 span {
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1;
+}
+
+.right-side h1 {
+  color: purple;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+label {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  color: gray;
+}
+
+input {
+  height: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+select,
+.register {
+  height: 40px;
+  width: 80%;
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+select > option {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 19px;
+  overflow: hidden;
+}
+
+.register {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .left-side {
+    border-right: none;
+  }
+
+  .right-side {
+    padding: 10px;
+  }
+}
